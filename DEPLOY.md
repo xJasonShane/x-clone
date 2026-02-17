@@ -55,12 +55,13 @@ git push -u origin main
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase 项目 URL（如 `https://xxx.supabase.co`） |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase 匿名密钥（在 Supabase Dashboard → Settings → API 中获取） |
 
-3. 选择 **Production** 和 **Preview** 环境
-4. 点击 **Save**
+1. 选择 **Production** 和 **Preview** 环境
+2. 点击 **Save**
 
 ### 4. 重新部署
 
 配置环境变量后，需要重新触发部署：
+
 - 方法1：在 Cloudflare Dashboard → Deployments 中点击 **Retry deployment**
 - 方法2：推送新的 commit 到 GitHub
 
@@ -86,6 +87,7 @@ Cloudflare Pages 要求客户端可访问的环境变量使用 `NEXT_PUBLIC_` �
 ### 2. 数据库配置
 
 确保 Supabase 项目已正确配置：
+
 - 表结构已创建
 - Row Level Security (RLS) 已正确设置
 - 允许来自 Cloudflare IP 的连接
@@ -110,6 +112,7 @@ Cloudflare Pages 要求客户端可访问的环境变量使用 `NEXT_PUBLIC_` �
 ### 构建失败
 
 检查构建日志，常见原因：
+
 - 环境变量未配置
 - 依赖安装失败
 - TypeScript 错误
@@ -117,11 +120,13 @@ Cloudflare Pages 要求客户端可访问的环境变量使用 `NEXT_PUBLIC_` �
 ### 运行时错误
 
 检查 Functions 日志：
+
 - Cloudflare Dashboard → Pages 项目 → **Logs**
 
 ### 数据库连接问题
 
 确保：
+
 - Supabase URL 和密钥正确
 - RLS 策略允许访问
 - 网络连接正常
