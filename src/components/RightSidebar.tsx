@@ -92,7 +92,7 @@ export function RightSidebar() {
         <a href="#" className="hover:underline">{language === 'zh' ? 'Cookie 政策' : 'Cookie Policy'}</a>
         <a href="#" className="hover:underline">{language === 'zh' ? '无障碍' : 'Accessibility'}</a>
         <a href="#" className="hover:underline">{language === 'zh' ? '广告信息' : 'Ads info'}</a>
-        <span>© 2024 X Clone</span>
+        <span>© {new Date().getFullYear()} X Clone</span>
       </div>
     </aside>
   );

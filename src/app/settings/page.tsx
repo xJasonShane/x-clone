@@ -843,7 +843,7 @@ export default function SettingsPage() {
         </a>
 
         <div className="p-4 text-center text-sm text-muted-foreground">
-          © 2024 X Clone. {language === 'zh' ? '保留所有权利。' : 'All rights reserved.'}
+          © {new Date().getFullYear()} X Clone. {language === 'zh' ? '保留所有权利。' : 'All rights reserved.'}
         </div>
       </div>
     </>
